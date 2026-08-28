@@ -42,6 +42,8 @@ https://github.com/craigz28/firmwalker
 EDR Evasion
 ============================================
 https://github.com/0xaled/Vipere
+https://www.geeksforgeeks.org/cpp/operator-overloading-cpp/
+https://www.trustedsec.com/blog/object-overloading
 
 Windows AD
 ============================================
@@ -64,6 +66,10 @@ https://github.com/vanhauser-thc/thc-ipv6
 Exploit/Malware Development
 =============================================
 https://github.com/TheWover/donut
+
+AI Skills
+=============================================
+https://github.com/abelrguezr/hacktricks-skills/tree/main
 
 
 
