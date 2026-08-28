@@ -6,4 +6,6 @@
 
 SKID-dles is a pet project to basically delve deep into threats, attacks, defenses, and general cool shit that I find interesting in the space and go way too far in depth with them.
 
-The ultimate goal is too spread awareness and education on these topics as too much info siloing and information overload is in the space. 
+DISCLAIMER: ALL THINGS IN THIS REPO ARE FOR EDUCATIONAL, ANY MISUSE OF TECHNIQUES IN THIS REPO ARE STRICTLY FROWNED UPON AND I DO NOT CONDONE LEARN THIS TO MAKE THE WORLD AND YOURSELF A BETTER PLACE AND PERSON. AND ANY TESTING OF THIS SHOULD BE USED ON PERSONAL DEVICES OR THOSE WHICH YOU ARE GIVE EXPLICIT CONSENT
+
+"Hack the rainbow, Taste the Rainbow" - John Skid
