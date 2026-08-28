@@ -75,5 +75,9 @@ https://github.com/abelrguezr/hacktricks-skills/tree/main
 Learning
 =============================================
 https://hacktricks.wiki
+https://www.reddit.com/r/blueteamsec/
+https://www.reddit.com/r/redteamsec/
+https://www.reddit.com/r/purpleteamsec/
+https://portswigger.net/web-security/learning-paths
 
 
