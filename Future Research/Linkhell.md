@@ -39,6 +39,7 @@ https://github.com/mandiant/flare-floss
 Hardware Hacking
 ============================================
 https://github.com/craigz28/firmwalker
+https://voidstarsec.com/roadmap/
 
 EDR Evasion
 ============================================
