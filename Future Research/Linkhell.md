@@ -79,5 +79,9 @@ https://www.reddit.com/r/blueteamsec/
 https://www.reddit.com/r/redteamsec/
 https://www.reddit.com/r/purpleteamsec/
 https://portswigger.net/web-security/learning-paths
+https://www.hacksplaining.com/lessons
 
+OSINT
+==============================================
+https://greylensresearch.github.io/filephish/
 
