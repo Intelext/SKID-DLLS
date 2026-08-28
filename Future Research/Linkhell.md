@@ -71,5 +71,8 @@ AI Skills
 =============================================
 https://github.com/abelrguezr/hacktricks-skills/tree/main
 
+Learning
+=============================================
+https://hacktricks.wiki
 
 
