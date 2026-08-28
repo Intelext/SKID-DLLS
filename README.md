@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./SKID-dles.png" alt="SKID-dles" width="600"/>
+  <img src="./SKIDDLLS.png" alt="SKIDDLLS" width="600"/>
 </p>
 
 # SKID-dles
