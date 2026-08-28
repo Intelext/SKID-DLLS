@@ -2,7 +2,7 @@
   <img src="./SKIDDLLS.png" alt="SKIDDLLS" width="600"/>
 </p>
 
-# SKID-dles
+# SKID-DLLS
 
 SKID-dles is a pet project to basically delve deep into threats, attacks, defenses, and general cool shit that I find interesting in the space and go way too far in depth with them.
 
