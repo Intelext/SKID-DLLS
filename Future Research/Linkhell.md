@@ -69,6 +69,7 @@ Exploit/Malware Development
 =============================================
 https://github.com/TheWover/donut
 https://github.com/jthuraisamy/TelemetrySourcerer
+https://github.com/NYAN-x-CAT/Lime-Crypter
 
 AI Skills
 =============================================
