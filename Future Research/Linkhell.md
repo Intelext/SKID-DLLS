@@ -70,6 +70,8 @@ Exploit/Malware Development
 https://github.com/TheWover/donut
 https://github.com/jthuraisamy/TelemetrySourcerer
 https://github.com/NYAN-x-CAT/Lime-Crypter
+github.com/naksyn/ProcessStomping, https://www.naksyn.com/edr%20evasion/2023/11/18/mockingjay-revisited-process-stomping-srdi-beacon.html
+
 
 AI Skills
 =============================================
