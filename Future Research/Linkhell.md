@@ -46,6 +46,7 @@ EDR Evasion
 https://github.com/0xaled/Vipere
 https://www.geeksforgeeks.org/cpp/operator-overloading-cpp/
 https://www.trustedsec.com/blog/object-overloading
+https://github.com/the-xentropy/xencrypt
 
 Windows AD
 ============================================
@@ -89,4 +90,12 @@ https://www.hacksplaining.com/lessons
 OSINT
 ==============================================
 https://greylensresearch.github.io/filephish/
+
+BOF
+=====================================
+https://github.com/N7WEra/BofAllTheThings
+
+
+
+
 
