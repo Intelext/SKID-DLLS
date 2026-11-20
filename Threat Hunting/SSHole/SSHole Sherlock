@@ -1,0 +1,24 @@
+This is a walk through and breakdown of the HTB Sherlock SSHole that goves over the forensics of searching for CVE-2026-123158 occuring on a Linux Device:
+
+After unzipping the file the first task is as such: 
+
+Task 1: What Linux distribution name and version was the targeted server running?
+Steps for Completiion:
+To locate a linux distribution when only given a file system you can check the os version in
+
+SShole -> etc -> os-release and the infromation will be found below 
+
+NAME="Alpine Linux"
+ID=alpine
+VERSION_ID=3.24.3
+PRETTY_NAME="Alpine Linux v3.24"
+HOME_URL="https://alpinelinux.org/"
+BUG_REPORT_URL="https://gitlab.alpinelinux.org/alpine/aports/-/issues"
+
+Task 1 Answer: Alpine Linux 3.24.3
+
+Task 2: What is the CVE ID of the vulnerability abused by the attacker to gain access?
+Steps for completion: This one is self explanatory we must find the name of the box this is based off of SSHole comes from the CVE-2026-123158 after a quick google search
+
+Task 2 Answer: CVE-2026-123158
+
