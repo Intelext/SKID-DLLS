@@ -1,0 +1,38 @@
+CVE overview of SSHole
+┌─────────────────────┬───────────────────────────────────────────────────┐
+│        Field        │                       Value                       │
+├─────────────────────┼───────────────────────────────────────────────────┤
+│ CVE                 │ CVE-2026-123158                                   │
+├─────────────────────┼───────────────────────────────────────────────────┤
+│ Nickname            │ SSHole / *sshole                                  │
+├─────────────────────┼───────────────────────────────────────────────────┤
+│ CVSS 3.1            │ 8.1 (High)                                        │
+├─────────────────────┼───────────────────────────────────────────────────┤
+│ Affected            │ OpenSSH < 10.6p2 on musl libc without PAM         │
+├─────────────────────┼───────────────────────────────────────────────────┤
+│ Fix                 │ OpenSSH 10.6p2 / Alpine patches (3.16–3.24, edge) │
+└─────────────────────┴───────────────────────────────────────────────────┘
+
+Attack Logic:
+Musl's crypt() implementation enforces a 256-byte ceiling on password input (a KEY_MAX inherited from its SHA-512 crypt, present since ~2012). When a password exceeds this limit, musl doesn't return NULL (as glibc and POSIX convention expect) — it returns the string "*". This single-character asterisk is musl's generic "operation failed" sentinel.
+
+In /etc/shadow, the password field * conventionally means "account locked — no valid password." Alpine Linux has shipped root's shadow entry as root:*:... since approximately Alpine 3.16. The intent is that no input should ever hash to *, so comparison always fails and login is denied.
+
+When an attacker sends an oversized password (257–1024 bytes) to sshd: a diagram is provided below
+
+Attacker                              sshd (Alpine/musl)
+   |                                       |
+   |-- SSH connect, password auth -------->|
+   |   (password = 300+ bytes of 'A')      |
+   |                                       |-- reads /etc/shadow
+   |                                       |   stored_hash = "*" (locked root)
+   |                                       |
+   |                                       |-- calls crypt(oversized_pw, "*")
+   |                                       |   musl KEY_MAX exceeded → returns "*"
+   |                                       |
+   |                                       |-- strcmp("*", "*") == 0
+   |                                       |   MATCH → authentication succeeds
+   |                                       |
+   |<---------- shell as root -------------|
+
+And then exfil can occur. 
